@@ -1,8 +1,8 @@
 <p align="center">
-    <img src="ssg5.png">
+    <img src="ssg6.png">
 </p>
 
-# SSG5 - A static site generator
+# SSG6 - A static site generator
 
 This POSIX compliable shell script has been written by [Roman
 Zolotarev](https://www.romanzolotarev.com/). The documentation for this project
@@ -19,7 +19,7 @@ PATH="$HOME/bin:$PATH"
 mkdir src dst
 echo '# Hello, World!' > src/index.md
 echo '<html><title></title>' > src/_header.html
-bin/ssg5 src dst 'Test' 'http://www'
+bin/ssg6 src dst 'Test' 'http://www'
 firefox dst/index.html
 ```
 
@@ -42,8 +42,8 @@ To use my customized script, you can set it up as follows:
 1. Clone the repository and put the executable in the /usr/bin directory
 
     ```bash
-    git clone https://github.com/fmash16/ssg5
-    sudoo cp ssg5/ssg5 /usr/bin
+    git clone https://github.com/Dark-Matter7232/ssg6
+    sudoo cp ssg6/ssg6 /usr/bin
     ```
 
     Create a source directory for storing your website source and a destination
@@ -58,15 +58,15 @@ To use my customized script, you can set it up as follows:
    them over to your ```src``` directory.
 
    ```bash
-   cp ssg5/_header.html blogsite/src/
-   cp ssg5/_footer.html blogsite/src/
+   cp ssg6/_header.html blogsite/src/
+   cp ssg6/_footer.html blogsite/src/
    ```
 
 3. Put your css in a file named ```style.css``` in the css folder inside the
    ```src``` directory.
 
    ```bash
-   cp -rv ssg5/css blogsite/src/
+   cp -rv ssg6/css blogsite/src/
    ```
 
 4. You can store your posts anywhere inside the src directory as you like. To
@@ -122,7 +122,7 @@ To build the site, run
 
 ```bash
 cd blogsite
-ssg5 src dst "Your blog name here" "Your website address here"
+ssg6 src dst "Your blog name here" "Your website address here"
 ```
 
 Now, your site is built in the dst directory.
